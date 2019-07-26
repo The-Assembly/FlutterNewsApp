@@ -20,21 +20,15 @@ class HomeScreen extends StatefulWidget{
 
 class WebView  extends StatefulWidget {
  final String value;
-WebView({String key, this.value});
+ WebView({String key, this.value});
     
-
   @override
   State<StatefulWidget> createState() {
- 
     return WebViewState();
   }
-
 }
 
 class WebViewState extends State<WebView>{
- 
- 
-  
   @override
   Widget build(BuildContext context) {
     String url =  widget.value;
@@ -46,8 +40,6 @@ class WebViewState extends State<WebView>{
       ),
     ); 
   }
-
-
 }
 
 
@@ -230,17 +222,6 @@ class HomeScreenState extends State<HomeScreen>{
                     ),
         )
       ]),
-    );
-  }
-
-    Column buildButtonColumn(IconData icon) {
-    Color color = Theme.of(context).primaryColor;
-    return new Column(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        new Icon(icon, color: color),
-      ],
     );
   }
   

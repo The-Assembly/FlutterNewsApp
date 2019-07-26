@@ -47,27 +47,12 @@ var data;
           "X-Api-Key": "306b0b4c8a9a4fc2b9df9a9ad997e9e6"
         });
 
-    //var snap = await globalStore.articleDatabaseReference.once();
-
     if (mounted) {
       this.setState(() {
         data = json.decode(response.body);
-        //snapshot = snap;
       });
     }
     return "Success!";
-  }
-
-  Column buildButtonColumn(IconData icon) {
-    Color color = Theme.of(context).primaryColor;
-    return new Column(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        new Icon(icon, color: color),
-      ],
-    );
- 
   }
   
   @override
@@ -209,4 +194,3 @@ var data;
     ); 
   }
 }
-

@@ -25,7 +25,7 @@ class _SavedArticlesScreenState extends State<SavedArticlesScreen> {
 
   Future updateSnapshot() async {
     await globalStore.logIn;
-    
+
     var snap = await globalStore.articleDatabaseReference.once();
     this.setState(() {
       snapshot = snap;
@@ -120,9 +120,7 @@ class _SavedArticlesScreenState extends State<SavedArticlesScreen> {
                                       ),
                                       onTap: () {
                                         flutterWebviewPlugin.launch(
-                                            snapshot.value["url"],
-                                         //   fullScreen: false      I changed the value here backspace
-                                            );
+                                            snapshot.value["url"]                                            );
                                       },
                                     ),
                                   ),
@@ -165,14 +163,6 @@ class _SavedArticlesScreenState extends State<SavedArticlesScreen> {
                 ],
               ),
             ),
-    );
-  
+    ); 
   }
-
-
-
-
-
-
-
 }

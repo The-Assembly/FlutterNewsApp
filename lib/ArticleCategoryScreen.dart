@@ -16,8 +16,6 @@ class ArticleCategoryScreen extends StatefulWidget {
     final catID;
     final catName; 
     
-    
-
   @override
  _ArticleCategoryScreenState createState() => new _ArticleCategoryScreenState( 
       catID: this.catID,
@@ -231,17 +229,6 @@ class _ArticleCategoryScreenState extends State<ArticleCategoryScreen> {
     this.getData();    
   }
 
-   Column buildButtonColumn(IconData icon) {
-    Color color = Colors.blue[100];
-    return new Column(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        new Icon(icon, color: color),
-      ],
-    );
-  }
-
   Future getData() async{
     await globalStore.logIn;
     articleDatabaseReference = globalStore.articleDatabaseReference;
@@ -263,6 +250,5 @@ class _ArticleCategoryScreenState extends State<ArticleCategoryScreen> {
     }
     return "Success";
   }
-
 }
 

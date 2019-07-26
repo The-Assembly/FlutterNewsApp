@@ -5,8 +5,7 @@ import './categoriesList.dart' as categoriesList;
 
 class CategoriesScreen extends StatefulWidget{
   @override 
-  createState() => new NewState();
-  
+  createState() => new NewState();  
 }
 
 class NewState extends State<CategoriesScreen>{
