@@ -1,6 +1,10 @@
 # Flutter News App
 The full source code for the Flutter News App created at the Assembly session on 27th July 2019
 
+IMP: Please follow the steps to configure Google services (sign in + Firebase) - and copy the resulting google-services.json to android/app folder - without that file this app won't work.
+
+Acknowledgement: Adapted from a project created a few years ago by Ankur Kedia on the GeekyAnts blog.
+
 # Additional Reading Material
 <A HREF="https://flutter.dev/docs/get-started/install/windows">Windows install - Flutter</A>
 
